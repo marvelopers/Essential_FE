@@ -24,3 +24,9 @@ HTTPS : Hypertext + secure
 
 [size scroll load]
 
+##  Browser Coordinates (브라우저 좌표) 
+
+-- X  | Y 
+X는 오른쪽으로 갈수록 Y는 아래쪽으로 갈수록 숫자가 커짐
+
+#### Element.getBoundingClientRect()
