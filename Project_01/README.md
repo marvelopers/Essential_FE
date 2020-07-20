@@ -29,4 +29,10 @@ HTTPS : Hypertext + secure
 -- X  | Y 
 X는 오른쪽으로 갈수록 Y는 아래쪽으로 갈수록 숫자가 커짐
 
-#### Element.getBoundingClientRect()
+#### Element.getBoundingClientRect() 
+요소가 브라우저 위에서 얼마나 멀리 떨어져 있는지, 크기는 얼마인지 등 확인 가능 
+
+client X, Y !== page X, Y
+
+
+
