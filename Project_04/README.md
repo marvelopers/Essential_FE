@@ -3,7 +3,6 @@
 1. DOM : Document Object Model
 - HTML tag >> JavaSctipt Node 
 - EventTarget >> Node >> Document, Element, Text
-- 
 
 DOM : https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
 
@@ -11,23 +10,23 @@ DOM API : https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
 
 HTML  
   ├─head─┬─title  
-  |      ├─link  
-  |      └─meta  
-  |  
+  │      ├─link  
+  │      └─meta  
+  │  
   └─body─┬─section─┬─h1──TextNode  
-         |         ├─h3──TextNode  
-         |         └─img  
-         |  
-         |  
+         │         ├─h3──TextNode  
+         │         └─img  
+         │  
+         │  
          └─span──TextNode  
   
 2. WINDOW
 
 [ WINDOW ]  
   ├─────[ DOM ]───────[ document ... ]  
-  |  
+  │  
   ├─────[ BOM ]───────[ navigator, location, fetch, storage ... ]  
-  |  
+  │  
   └─────[ JavaScript ]───────[ Array, Map, Date ... ]  
 
 
@@ -49,10 +48,24 @@ CSSOM : https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model
 
 ### DOM + CSSDOM => Render Tree
 
-## 모르면 후회하는 레이어 데모 
 ### Critical Rendering Path
 
-## 즐겨찾기 필수 사이트
+requests/reaponse => loading => scripting => rendering => layout => pointing
+
+───────────────construction────────────── ────────────Operation───────────
+
+        DOM / CSSCOM / RenderTree           layout / paint / composition
+
+
+>>paint : 이미지를 비트맵 데이터로 변환 / Z-index를 통해 레이어 그룹핑
+** js나 CSS로 DOM 요소를 조작할 때? composition 만 이루어지는 경우가 BEST >> paint SOSO >> layout WORST!
+
+## 모르면 후회하는 레이어 데모 
+* will change 
+
+
+## 즐겨찾기 필수 사이트 
+https://csstriggers.com/
 
 ## 성능 개선 증거
 
