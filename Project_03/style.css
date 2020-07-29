@@ -1,5 +1,6 @@
 body{
   background-color: black;
+  margin: 0;
 }
 .line{
   position: absolute;
@@ -9,26 +10,26 @@ body{
 .horizontal{
   width: 100%;
   height: 1px;
-  top: 50%;
+  /* top: 50%; */
 }
 
 .vertical{
   height: 100%;
   width: 1px;
-  left: 50%;
+  /* left: 50%; */
 }
 
 .target{
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
   transform: translate(-50%, -50%);
 }
 
 .tag{
   color: white;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  /* top: 50%;
+  left: 50%; */
   transform: translate(20px, 20px);
 }
