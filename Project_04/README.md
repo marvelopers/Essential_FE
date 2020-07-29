@@ -41,16 +41,20 @@ HTML
   Node : https://developer.mozilla.org/en-US/docs/Web/API/Node
   Event Target : https://developer.mozilla.org/en-US/docs/Web/API/EventTarget
 
-
-## 성능 보장 렌더링 순서
+## CSSOM
 ### DOM + CSS = CSSOM : CSS Object Model
 
 CSSOM : https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model
 
 ### DOM + CSSDOM => Render Tree
 
-## 모르면 후회하는 레이어 데모 
+## 성능 보장 렌더링 순서
 ### Critical Rendering Path
+
+Z-index
+
+
+## 모르면 후회하는 레이어 데모 
 
 ## 즐겨찾기 필수 사이트
 
