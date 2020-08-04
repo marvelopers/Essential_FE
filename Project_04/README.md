@@ -62,17 +62,16 @@ Z-index
 ## 즐겨찾기 필수 사이트
 =======
 ### Critical Rendering Path
-
-requests/reaponse => loading => scripting => rendering => layout => pointing
 ```
+requests/reaponse => loading => scripting => rendering => layout => pointing
 
 ───────────────construction────────────── ────────────Operation───────────
 
         DOM / CSSCOM / RenderTree           layout / paint / composition
 ```
 
->>paint : 이미지를 비트맵 데이터로 변환 / Z-index를 통해 레이어 그룹핑
-** js나 CSS로 DOM 요소를 조작할 때? composition 만 이루어지는 경우가 BEST >> paint SOSO >> layout WORST!
+>paint : 이미지를 비트맵 데이터로 변환 / Z-index를 통해 레이어 그룹핑
+* js나 CSS로 DOM 요소를 조작할 때? composition 만 이루어지는 경우가 BEST >> paint SOSO >> layout WORST!
 
 ## 모르면 후회하는 레이어 데모 
 * will change 
