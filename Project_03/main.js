@@ -20,8 +20,6 @@ addEventListener('load', () => {
     tag.style.transform = `translate(${x + 20}px, ${y + 20}px)`;
     tag.innerHTML = `${x}px, ${y}px`;
 
-
-
   })
 })
 

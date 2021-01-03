@@ -6,38 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Window Size</title>
     <style>
-        .tag {
-            display: inline-block;
-            background-color: beige;
-            padding: 18px;
-            margin-top: 18px;
-            font-size: 49px;
-        }
+      .tag {
+          display: inline-block;
+          background-color: beige;
+          padding: 18px;
+          margin-top: 18px;
+          font-size: 49px;
+      }
     </style>
 </head>
 
 <body>
-    <div class="tag">WindowSize</div>
+    <div class="tag">Window Size</div>
     <script>
+      const tag = document.querySelector('.tag');
+      function updateTag() {
+        tag.innerHTML = `
+          window.screen: ${window.screen.width}, ${window.screen.height} <br/>
+          window.outer: ${window.outerWidth}, ${window.outerHeight} <br/>
+          window.inner: ${window.innerWidth}, ${window.innerHeight} <br/>
+          documnetElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+        `
+      }
 
-        const tag = document.querySelector('.tag');
-        function updateTag() {
-            tag.innerHTML = `
-                window.screen: ${window.screen.width}, ${window.screen.height} <br/>
-                window.outer: ${window.screen.width}, ${window.screen.height} <br/>
-                window.inner: ${window.screen.width}, ${window.screen.height} <br/>
-                documnetElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
-            `
-        }
+      window.addEventListener('resize', () => {
+        updateTag();
+        console.log(`window.screen: ${window.screen.width}, ${window.screen.height}`);
+        console.log(`window.outer: ${window.outerWidth}, ${window.outerHeight}`);
+        console.log(`window.inner: ${window.innerWidth}, ${window.innerHeight}`);
+        console.log(`documnetElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`);
+      });
 
-        window.addEventListener('resize', () => {
-            updateTag();
-
-            console.log(`window.screen: ${window.screen.width}, ${window.screen.height}`);
-            console.log(`window.outer: ${window.screen.width}, ${window.screen.height}`);
-            console.log(`window.inner: ${window.screen.width}, ${window.screen.height}`);
-            console.log(`documnetElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}`);
-        })
+      updateTag();
     </script>
 </body>
 
