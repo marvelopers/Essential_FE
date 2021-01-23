@@ -9,7 +9,7 @@ addEventListener('load', () => {
   const targetHalfWidth = targetRect.width / 2;
   const targetHalfHeight = targetRect.height / 2;
 
-  //mouse move
+  //mouse move 애니메이션 성능 최적화
   document.addEventListener('mousemove', (event) => {
     const x = event.clientX;
     const y = event.clientY;
