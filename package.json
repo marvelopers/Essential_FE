@@ -7,7 +7,7 @@
     "nodemon": "^2.0.20",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "webpack": "^4.44.1"
+    "webpack": "^5.75.0"
   },
   "devDependencies": {},
   "scripts": {
